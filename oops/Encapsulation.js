@@ -21,3 +21,8 @@ person1.displayInfo();
 
 // if we try to access #name property then it cannot be accessed and hence will throw error.
 //  data can only be accessed through methods not directly .
+// Encapsulation provides several benefits:
+
+// Data Protection: It protects an object’s state by preventing unauthorized parties from modifying it.
+// Simplified Interface: It provides a simplified interface to interact with the object's data.
+// Maintainability: It makes the code more maintainable by centralizing the data management logic within the class.
