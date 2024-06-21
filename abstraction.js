@@ -2,6 +2,8 @@
 // This helps in reducing programming complexity and effort. JavaScript achieves abstraction through classes and methods that provide 
 // a clear and simplified interface.
 
+// Abstraction through Encapsulation and Simplified Interface:
+
 class Car{
     constructor(name,model){
         this.name=name;
