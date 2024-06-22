@@ -9,3 +9,8 @@
 
 // This is where JavaScript keeps track of what function is currently being executed and what functions are called from within that function.
 // The call stack operates on a last-in, first-out (LIFO) principle.
+
+// Web APIs:
+
+// These are provided by the browser (or the environment in the case of Node.js) and include features like setTimeout, DOM events, HTTP requests, etc.
+// When such an API function is called, it’s handed off to the browser, allowing JavaScript to continue executing other code.
