@@ -14,3 +14,8 @@
 
 // These are provided by the browser (or the environment in the case of Node.js) and include features like setTimeout, DOM events, HTTP requests, etc.
 // When such an API function is called, it’s handed off to the browser, allowing JavaScript to continue executing other code.
+
+// Callback Queue (or Task Queue):
+
+// When an asynchronous operation completes (e.g., a timer finishes or an HTTP request gets a response), its callback is 
+// placed in the callback queue.
