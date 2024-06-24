@@ -35,3 +35,8 @@ setTimeout(() => {
 }, 2000);
 
 console.log("End");
+
+// Key Points
+// Non-blocking: The event loop allows JavaScript to perform non-blocking I/O operations by offloading these operations to the Web APIs.
+// Single-threaded: JavaScript runs on a single thread, but the event loop, in combination with Web APIs and the callback queue, allows it to handle asynchronous operations efficiently.
+// Order of Execution: Synchronous code runs first, and asynchronous callbacks are executed only when the call stack is empty.
