@@ -19,3 +19,9 @@
 
 // When an asynchronous operation completes (e.g., a timer finishes or an HTTP request gets a response), its callback is 
 // placed in the callback queue.
+
+// Event Loop:
+
+// The event loop continuously checks the call stack to see if it is empty.
+// If the call stack is empty, it looks at the callback queue to see if there are any pending callbacks.
+// If there are pending callbacks, it pushes the first callback in the queue to the call stack for execution.
