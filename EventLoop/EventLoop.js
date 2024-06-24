@@ -25,3 +25,13 @@
 // The event loop continuously checks the call stack to see if it is empty.
 // If the call stack is empty, it looks at the callback queue to see if there are any pending callbacks.
 // If there are pending callbacks, it pushes the first callback in the queue to the call stack for execution.
+
+// example
+
+console.log("Start");
+
+setTimeout(() => {
+  console.log("Timeout callback");
+}, 2000);
+
+console.log("End");
