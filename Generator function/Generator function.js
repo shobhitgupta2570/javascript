@@ -20,3 +20,10 @@ function* simpleGenerator() {
   console.log(generator.next()); // { value: 3, done: false }
   console.log(generator.next()); // { value: undefined, done: true }
   
+
+//   Explanation
+// Definition: The generator function simpleGenerator is defined using function*.
+// Yield: The yield keyword is used to pause the function and return a value.
+// Invocation: The generator function is invoked using simpleGenerator(), which returns a generator object.
+// Iteration: The generator object's next() method is called to get the next value from the generator.
+//  Each call to next() resumes the generator function from where it left off and runs until the next yield.
