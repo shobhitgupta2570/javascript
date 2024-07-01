@@ -13,7 +13,9 @@ function* asyncTaskGenerator() {
     const gen = generator();
   
     function handle(yielded) {
+      console.log(yielded)
       if (!yielded.done) {
+        console.log(yielded.value)
         yielded.value.then(() => handle(gen.next()));
       }
     }
@@ -22,4 +24,28 @@ function* asyncTaskGenerator() {
   };
   
   runAsyncTasks(asyncTaskGenerator);
+
+//   Here is a visual representation of the state changes and execution flow:
+
+// plaintext
+// Copy code
+// 1. runAsyncTasks(asyncTaskGenerator)
+// 2. gen = asyncTaskGenerator()
+// 3. handle(gen.next())
+
+//    [Initial call to handle]
+//    - gen.next() -> { value: Promise, done: false }
+//    - Wait for Promise to resolve (1 second)
+
+// 4. [After 1 second]
+//    - gen.next() resumes
+//    - Print: "Task completed after 1 second"
+//    - gen.next() -> { value: Promise, done: false }
+//    - Wait for Promise to resolve (2 seconds)
+
+// 5. [After 2 seconds]
+//    - gen.next() resumes
+//    - Print: "Task completed after 2 more seconds"
+//    - gen.next() -> { value: "All tasks done", done: true }
+//    - Generator is done
   
