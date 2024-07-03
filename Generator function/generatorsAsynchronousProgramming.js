@@ -49,3 +49,6 @@ function* asyncTaskGenerator() {
 //    - gen.next() -> { value: "All tasks done", done: true }
 //    - Generator is done
   
+
+// Generators can simplify asynchronous programming by allowing you to write
+//  asynchronous code in a synchronous style, which is easier to read and maintain.
