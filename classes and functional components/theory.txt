@@ -1,0 +1,21 @@
+In React, we can create components using either class components or functional components.
+
+Class Components:
+
+Syntax: They are ES6 classes that extend from React.Component.
+State Management: Managed using this.state and updated with this.setState().
+Lifecycle Methods: Have built-in lifecycle methods like componentDidMount, componentDidUpdate, and componentWillUnmount.
+this Keyword: Used to access props, state, and methods.
+
+
+Functional Components:
+
+Syntax: Simpler, defined as plain JavaScript functions.
+State Management: Managed using React hooks like useState and useReducer.
+Lifecycle Methods: Use hooks like useEffect to handle side effects, mimicking lifecycle methods.
+No this Keyword: They don’t use the this keyword.
+React Hooks:
+With the introduction of hooks in React 16.8, functional components gained the ability to manage state and side effects. Key hooks include:
+
+useState for state management.
+useEffect for handling side effects, similar to lifecycle methods in class components.
