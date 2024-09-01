@@ -19,3 +19,4 @@ With the introduction of hooks in React 16.8, functional components gained the a
 
 useState for state management.
 useEffect for handling side effects, similar to lifecycle methods in class components.
+ygghjm
